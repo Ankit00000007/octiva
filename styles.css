@@ -735,6 +735,14 @@ h2 {
     bottom: 10px; */
 }
 
+.mob-view-footer{
+    display: none;
+}
+
+
+.menu-btn{
+    display: none;
+}
 
 
 /* >><<<<<ANIMATION CSS>>>>>>> */
@@ -1039,6 +1047,11 @@ h2 {
         letter-spacing: 0;
     }
 
+
+    .box span {
+        font-size: 0.4em;
+    }
+
     .circular-bg {
         position: static;
         width: 100%;
@@ -1080,16 +1093,69 @@ h2 {
     }
 
 
-    
-
-
     .item::after {
         display: none;
     }
 
     /* Footer styles */
-    .footer {
-        bottom: 0;
+    
+    .footer-top-border{
+        display: none;
+    }
+
+
+    .mob-view-footer{
+        display: block;
+        height: auto;
+    }
+
+    .menu-icon{
+        width: 60px;
+    }
+
+    .mob-foot{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu-btn{
+        width: 20%;
+        background-color: #0D0D10;
+        padding: 10px;
+        border-radius: 50px;
+        margin: 0 auto;
+        text-align: center;
+        position: relative;
+        top: 33px;
+        display: block;
+    }
+
+    .menu-btn svg{
+        background: #424485;
+        border-radius: 28px;
+        height: 50px;
+        width: 50px;
+        padding: 5px;
+    }
+
+    .footer-icon{
+        width: 100%;
+        height: 50px;
+        background: linear-gradient(to bottom, #45488b, #232551);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .footer-icon i{
+        font-size: 25px;
+    }
+
+
+    .footer{
+        display: none;
     }
 
     .contact-container {
