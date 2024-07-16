@@ -1,0 +1,7 @@
+:root{
+    --linearGradient: linear-gradient(90deg, #AD80FA 2.17%, #FD96B6 41.5%, #FDB086 95.95%);
+    --buttonGradient:linear-gradient(90deg, #FFAD73 0%, #EF78BD 50%, #AC7BF4 100%);
+    --cardGradient: linear-gradient(180deg, #14041E 17.06%, #000000 100%);
+    --headingGradient:linear-gradient(90deg, #FEA875 0%, #EF78BD 55.5%, #8243E0 100%);
+
+}
