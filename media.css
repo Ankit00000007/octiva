@@ -3,5 +3,6 @@
     --buttonGradient:linear-gradient(90deg, #FFAD73 0%, #EF78BD 50%, #AC7BF4 100%);
     --cardGradient: linear-gradient(180deg, #14041E 17.06%, #000000 100%);
     --headingGradient:linear-gradient(90deg, #FEA875 0%, #EF78BD 55.5%, #8243E0 100%);
+    --roadMapColor: linear-gradient(180deg, rgba(32, 0, 56, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%);
 
 }

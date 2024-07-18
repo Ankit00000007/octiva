@@ -10,7 +10,7 @@ body {
     background-color: #0D0D10;
     color: #fff;
     font-family: "inter", sans-serif;
-    background-image: url(/Images/logo-bg-img.png);
+    background-image: url(./Images/logo-bg-img.png);
     background-repeat: no-repeat;
     backdrop-filter: blur(30px);
     background-size: 35% 8%;
@@ -83,13 +83,13 @@ body {
 /* Main section CSS */
 
 .hero-div {
-    background-image: url(/Images/globe-img.png);
+    background-image: url(./Images/globe-img.png);
     background-repeat: no-repeat;
     background-position: top;
     background-size: 70% 185%;
     overflow: visible;
-    position: relative;
-    top: 150px;
+    /* position: relative;
+    top: 150px; */
 }
 
 .hero-div .token-img1 {
@@ -99,6 +99,29 @@ body {
     animation: rotateSphere 8s infinite linear;
     transform-style: preserve-3d;
 }
+
+.content {
+    flex: 1;
+    padding: 5rem;
+  }
+
+.phone {
+    width: 60%;
+    height: auto;
+    position: relative;
+    top: -75px;
+    left: 55px;
+
+  }
+
+  .mobile {
+    position: absolute;
+    width: 30vw;
+    height: auto;
+    z-index: -1;
+    left: -84px;
+    bottom: 23px;
+  }
 
 
 
@@ -123,8 +146,8 @@ body {
     justify-content: center;
     gap: 15px;
     /* padding-bottom: 100px; */
-    position: relative;
-    top: -213px;
+    /* position: relative;
+    top: -213px; */
 }
 
 
@@ -186,10 +209,12 @@ body {
 }
 
 
+
+
 /* Cards section CSS */
 
 /* .full-width-container {
-    background-image: url(/Images/card-bg-img.png);
+    background-image: url(./Images/card-bg-img.png);
     background-repeat: no-repeat;
     background-position: top;
 } */
@@ -205,7 +230,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: relative;
+    /* position: relative; */
 }
 
 .card-section .card-img-div {
@@ -271,10 +296,10 @@ body {
 
 .about-section {
     width: 90%;
-    margin: 100px auto;
+    margin: 50px auto;
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 70px;
 }
 
 .para-line-height{
@@ -292,13 +317,27 @@ body {
 }
 
 .about-section .about-img-div {
-    width: 100%;
+    /* width: 100%;
     display: flex;
     justify-content: center;
+    flex-direction: column; */
 }
 
-.about-section .about-img-div img {
-    width: 75%;
+.about-section .about-img-div .about-img {
+    width: 70%;
+}
+
+
+
+.backdrop-div1{
+    background: radial-gradient(circle closest-side, #0038FF -200%, #3f3f3f00);
+    backdrop-filter: blur(1000px);
+    z-index: -1;
+    position: absolute;
+    top: 13%;
+    height: 420px;
+    width: 400px;
+    left: 8%;
 }
 
 
@@ -315,6 +354,36 @@ body {
     letter-spacing: 0.04em;
 }
 
+
+.about-section .about-img-div .about-coin{
+    width: 120px;
+    height: 120px;
+    position: relative;
+    animation: rotateSphere 8s infinite linear;
+    transform-style: preserve-3d;
+}
+
+.coin1{
+    top: 205px;
+    right: -75%;
+}
+
+.coin2{
+    top: 70px;
+    right: 8%;
+
+}
+
+.coin3{
+    top: -280px;
+    right: 6%;
+}
+
+.coin4{
+    top: -128px;
+    right: -38%;
+}
+
 /* Tokenomics CSS */
 
 .tokenomics-container {
@@ -323,11 +392,22 @@ body {
     height: auto;
 }
 
+.tokenomics-container .backdrop-div{
+    position: absolute;
+    background: radial-gradient(circle closest-side, #FC78FF -200%, #3f3f3f00);
+    left: 58%;
+    top: 73%;
+    height: 400px;
+    backdrop-filter: blur(90px);
+    z-index: -1;
+    width: 400px;
+}
+
 .octivaImg {
     position: relative;
     left: 18%;
-    bottom: -10px;
-    width: 65%;
+    bottom: -140px;
+    width: 60%;
 }
 
 .octivaImg img {
@@ -351,12 +431,12 @@ body {
 }
 
 .circular-bg {
-    width: 700px;
-    height: 800px;
+    width: 773px;
+    height: 925px;
     border-radius: 50%;
     position: absolute;
-    left: 30%;
-    top: 6%;
+    left: 26%;
+    top: 10%;
     margin: 0 auto;
 }
 
@@ -371,10 +451,17 @@ body {
     flex-direction: column;
     border: 1px solid #FFFFFF;
     background: #afafaf1a;
-    width: 280px;
-    height: 160px;
+    width: 305px;
+    height: 210px;
+
     /* line-height: 50px; */
     transition: .5s ease-out;
+}
+
+.inner-box{
+    position: relative;
+    z-index: 999;
+    height: 100px;
 }
 
 .box span {
@@ -444,11 +531,16 @@ body {
 
 .cards {
     width: 95%;
-    background-color: #0A0E18;
-    border-radius: 10px;
+    /* background-color: #0A0E18; */
     padding: 20px;
     text-align: center;
     transition: .5s ease-out;
+    padding: 60px 30px;
+    border-width: 3px !important;
+    border-style: solid !important;
+    background: linear-gradient(#0A0E18, #0A0E18) padding-box, linear-gradient(to right, #ffffff52,black) border-box;
+    border-radius: 40px ;
+    border: 2px solid transparent !important;
 }
 
 .cards:hover {
@@ -457,8 +549,8 @@ body {
   }
 
 .profile-img {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     margin-bottom: 10px;
 }
@@ -481,6 +573,7 @@ body {
     -webkit-text-fill-color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
+    text-transform: uppercase;
 
 }
 
@@ -492,15 +585,17 @@ body {
 
 .description {
     font-size: 14px;
-    margin: 20px auto;
+    /* margin: 20px auto; */
     color: #fff;
-    width: 55%;
+    padding: 10px 15px;
 }
 
 .social-icons {
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 30px;
+    align-items: center;
+    font-size: 25px;
 }
 
 .social-icon {
@@ -509,7 +604,13 @@ body {
     /* background-color: #444; */
     border-radius: 50%;
 }
-
+.join-team h2{
+    text-align: center;
+    /* margin-bottom: 40px; */
+    font-size: 36px;
+    font-weight: 700;
+    padding-inline: 9px;
+}
 .join-button {
     color: white;
     padding: 10px 20px;
@@ -525,14 +626,14 @@ body {
 
 
 .footer {
-    background-image: url('/Images/footer-img.png');
+    background-image: url('./Images/footer-img.png');
     background-size: 100% 100%;
     /* position: relative;
     bottom: -78px; */
 }
 
 .rectangle{
-    background-image: url(./Images/Rectangle.png);
+    /* background-image: url(./Images/Rectangle.png); */
     background-repeat: no-repeat;
     background-size: 100%;
     object-fit: cover;
@@ -551,7 +652,7 @@ body {
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px 0;
+    padding: 20px 20px;
 }
 
 .logo-section {
@@ -619,14 +720,48 @@ body {
     background: linear-gradient(to bottom#f8f8f8 50%, #929292 100%);
 }
 
+.contact-container{
+    position: relative;
+    z-index: 2;
+}
+
+
+
+
+.rectangle{
+    position: relative;
+    z-index: 1; 
+}
+
+ 
+
+.footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: inherit;
+    background-size: inherit;
+    filter: blur(5px); 
+    z-index: 0;
+}
+
+.footer{
+    position: relative;
+}
+
+     
+
 
 .roadmap {
-    background-image: url(/Images/GOL\ 2.png);
-    background-repeat: no-repeat;
-    background-size: 70% 52%;
+    /* background-image: url(./Images/GOL\ 2.png); */
+    /* background-repeat: no-repeat;
+    background-size: 70% 52%; */
     max-width: 1000px;
     margin: 150px auto;
-    background-position: center;
+    /* background-position: center; */
     margin-top: 210px;
 }
 
@@ -641,13 +776,14 @@ body {
 
 .container2 {
     margin: 10px auto;
-    border: 1px solid white;
+    border: 1px solid lightgrey;
     border-radius: 20px;
     padding: 30px 50px;
-    position: relative;
+    /* position: relative; */
     width: 85%;
-    background: #afafaf1a;
-    backdrop-filter: blur(10px);
+    background: var(--roadMapColor);
+    /* backdrop-filter: blur(10px); */
+    
 }
 
 h2 {
@@ -669,7 +805,8 @@ h2 {
     position: absolute;
     width: calc(40% - 20px);
     border: 1px solid white;
-    box-shadow: 0px 0px 80px 15px rgb(180, 180, 180);
+    /* box-shadow: 0px 0px 80px 15px rgb(180, 180, 180); */
+    /* background: #0000004d; */
 }
 
 
@@ -701,13 +838,14 @@ h2 {
     line-height: 40.45px;
     text-align: left;
     -webkit-text-stroke: black;
-    -webkit-text-stroke: 2px rgb(255, 255, 255);
+    -webkit-text-stroke: 1px rgb(255, 255, 255);
     
 }
 
 .year {
-    font-size: 12px;
+    font-size: 20px;
     opacity: 0.7;
+    font-weight: 800;
 }
 
 .item::after {
@@ -715,13 +853,12 @@ h2 {
     position: absolute;
     top: 50%;
     width: 20px;
-    background: rgba(255, 255, 255, 0.2);
+    
 }
 
 .item:nth-child(1)::after {
     right: -363px;
     width: 360px;
-    border-bottom: none;
     border-style: dashed;
     height: 39px;
     border-left: none;
@@ -729,6 +866,7 @@ h2 {
     border-bottom: none;
     border-top-right-radius: 30px;
     top: 38px;
+    /* background:  linear-gradient(90deg, #FEA875 0%, #FF71CC 50%, #B077F7 100%)!important; */
 }
 
 .item:nth-child(2)::after {
@@ -739,7 +877,7 @@ h2 {
     border-bottom: none;
     height: 41px;
     border-top-left-radius: 30px;
-    top: 72px;
+    top: 69px;
     background: none;
 }
 
@@ -781,7 +919,7 @@ h2 {
     /* position: relative;
     top: -60px;*/
     backdrop-filter: blur(2000px); 
-    background-image: url(/Images/card-bg-img.png);
+    background-image: url(./Images/card-bg-img.png);
     background-repeat: no-repeat;
     background-position: top;
     background-size: 100% 100%;
@@ -813,8 +951,8 @@ h2 {
 
 /* >><<<<<ANIMATION CSS>>>>>>> */
 .sphere {
-    animation: rotateSphere 8s infinite linear;
-    transform-style: preserve-3d;
+    /* animation: rotateSphere 8s infinite linear;
+    transform-style: preserve-3d; */
   }
   
   @keyframes rotateSphere {
@@ -847,8 +985,12 @@ h2 {
 
     .hero-div .txt-div-btn {
         width: 100%;
-        position: relative;
-        left: -6px;
+        /* position: relative;
+        left: -6px; */
+    }
+
+    .buttons {
+        flex-wrap: nowrap;
     }
  
     .hero-div{
@@ -908,14 +1050,28 @@ h2 {
         font-size: 120px;
     }
 
+    .mobile {
+        position: absolute;
+        width: 34vw;
+        height: auto;
+        z-index: -1;
+        left: -90px;
+        bottom: 20px;
+      }
+
     .card-section .cards-div .card {
         width: 23%;
     }
     .octivaImg {
         position: relative;
-        left: 18%;
-        bottom: -30px;
+        left: 14%;
+        bottom: -108px;
         width: 70%;
+    }
+
+    .tokenomics-container .backdrop-div{
+        left: 54%;
+
     }
 }
 
@@ -929,8 +1085,12 @@ h2 {
 
     /* Navbar styles */
     .navbar {
-        flex-direction: row-reverse;
+        /* flex-direction: row-reverse; */
         align-items: center;
+    }
+
+    .nav-img{
+        display: none;
     }
 
     .logo-div {
@@ -986,7 +1146,7 @@ h2 {
         top: -102   px;
     }
 
-    .main-section-txt-div {
+    /* .main-section-txt-div {
         width: 80%;
         margin: -30px auto;
         display: flex;
@@ -994,10 +1154,10 @@ h2 {
         align-items: center;
         justify-content: center;
         gap: 15px;
-        /* padding-bottom: 100px; */
+        padding-bottom: 100px;
         position: relative;
         top: -145px;
-    }
+    } */
 
     .hero-div h1 {
         width: 90%;
@@ -1056,7 +1216,8 @@ h2 {
     /* About section styles */
     .about-section {
         flex-direction: column;
-        margin: 50px auto;
+        margin: 0px auto;
+        width: 78%;
     }
 
     .about-section .about-info-div {
@@ -1066,7 +1227,7 @@ h2 {
     }
 
     .about-section .about-img-div img {
-        width: 100%;
+        width: 90%;
     }
 
     .about-info1 h2, .about-info2 h2{
@@ -1087,7 +1248,7 @@ h2 {
     }
 
     .octivaImg img {
-        width: 80%;
+        width: 70%;
     }
 
     .octivaHeader{
@@ -1100,11 +1261,27 @@ h2 {
         font-size: 0.3em;
     }
 
+    
     .circular-bg {
-        left: 15%;
-        top: -6%;
-        width: 386px;
-        height: 653px;  
+        left: 24%;
+        top: 5%;
+        width: 405px;
+        height: 644px;
+    }  
+    
+
+    .tokenomics-container .backdrop-div {
+        width: 208px;
+        height: 260px;
+    }
+
+    .coin2 {
+        top: 72px;
+        right: 5%;
+    }
+
+    .content {
+        padding: 1rem;
     }
 
     .users {
@@ -1154,7 +1331,7 @@ h2 {
     }
 
     .container2 {
-        width: 100%;
+        width: 80%;
         padding: 20px;
     }
 
@@ -1166,7 +1343,7 @@ h2 {
         position: static;
         margin: 30px auto;
         width: 80%;
-        box-shadow: 0px 0px 35px 15px rgb(180, 180, 180);
+        /* box-shadow: 0px 0px 35px 15px rgb(180, 180, 180); */
     }
 
 
@@ -1197,7 +1374,7 @@ h2 {
     }
 
     .menu-btn{
-        width: 20%;
+        width: 15%;
         background-color: #0D0D10;
         padding: 10px;
         border-radius: 50px;
@@ -1282,9 +1459,10 @@ h2 {
 
     /* Navbar styles */
     .navbar {
-        flex-direction: row-reverse;
         align-items: center;
     }
+
+    
 
     .logo-div {
         width: 100%;
@@ -1367,6 +1545,56 @@ h2 {
         width: 100%;
     }
 
+
+    .buttons {
+        justify-content: center;
+        align-items: center;
+      }
+  
+      
+  
+      .content {
+          flex: 1;
+          padding: 2rem;
+      }
+  
+  
+      
+  
+      .nav-img{
+          top: -46px;
+          left: -12% !important;
+      }
+  
+      
+  
+      .btn {
+        width: 100%;
+      }
+  
+      .phone-container {
+          max-width: 150px;
+          position: relative;
+          left: 8%;
+      }
+
+      .phone {
+        top: -52px;
+        left: 30px !important;
+        width: 50% !important;
+      }
+  
+      .mobile {
+        left: -28px !important;
+        top: 27% !important;
+        width: 36vh;
+      }
+  
+      .backdrop-div {
+          height: 160px;
+          width: 172px !important;
+          top: 40% !important;
+      }
   
 
     /* Card section styles */
@@ -1380,16 +1608,18 @@ h2 {
         margin-bottom: 20px;
     }
 
+
     /* About section styles */
     .about-section {
         flex-direction: column;
-        margin: 50px auto;
+        margin: 10px auto;
     }
 
     .about-section .about-info-div {
         border-right: none;
         padding-right: 0;
         text-align: center;
+        margin-top: 30px;
     }
 
     .about-section .about-img-div img {
@@ -1428,8 +1658,8 @@ h2 {
     }
 
     .circular-bg {
-        left: 25%;
-        top: 4%;
+        left: 30%;
+        top: 9%;
         width: 256px;
         height: 574px;
     }
@@ -1483,7 +1713,7 @@ h2 {
     }
 
     .container2 {
-        width: 100%;
+        width: 90%;
         padding: 20px;
     }
 
@@ -1495,7 +1725,7 @@ h2 {
         position: static;
         margin: 30px auto;
         width: 80%;
-        box-shadow: 0px 0px 35px 15px rgb(180, 180, 180);
+        /* box-shadow: 0px 0px 35px 15px rgb(180, 180, 180); */
     }
 
 
@@ -1596,9 +1826,28 @@ h2 {
 
 
 @media screen and (min-width: 768px) and (max-width: 872px) {
+    .logo-div img {
+        width: 74%;
+    }
     .nav-item-div{
         justify-content: space-between;
+        width: 100%;
     }
+
+    .mobile {
+        left: 8px !important;
+        bottom: 28px !important;
+        }
+
+        .visuals{
+            left: -36px;
+        }
+
+        .phone{
+            top: -58px;
+            left: 79px;
+            width: 50%;
+        }
 
     .hero-div .token-img1{
         left: 160px;
@@ -1610,8 +1859,8 @@ h2 {
     }
 
     .circular-bg {
-        left: 20%;
-        top: 4%;
+        left: 25%;
+        top: 10%;
         width: 528px;
         height: 707px;
     }
@@ -1620,11 +1869,24 @@ h2 {
         width: 100%;
     }
 
+    .tokenomics-container .backdrop-div{
+        height: 260px;
+        width: 250px;
+        left: 60%;
+        top: 67%;
+    }
+
     .octivaImg {
         position: relative;
         left: 10%;
         bottom: -100px;
         width: 80%;
+    }
+
+
+    
+    .item:nth-child(3)::after {
+        top: 43px;
     }
 
     .box{
@@ -1647,6 +1909,7 @@ h2 {
         width: 272px;
         left: -279px;
         height: 46px;
+        top: 78%;
     }
 
     .item1{
@@ -1680,7 +1943,124 @@ h2 {
 }
 
 
-@media screen and (min-width: 873px) and (max-width: 1200px) {
+@media screen and (min-width: 873px) and (max-width: 999px) {
+
+    .nav-item-div {
+        width: 80%;
+    }
+
+    .nav-img {
+        left: -41%;
+    }
+
+    
+    .mobile {
+        left: -27px;
+        bottom: 27px;
+        }
+    
+        .logo-div img {
+            width: 60%;
+        }
+
+    .phone{
+        top: -58px;
+        left: 40px;
+        width: 50%;
+    }
+
+    .coin1 {
+        top: -272px;
+        right: -70%;
+    }
+
+    .coin2 {
+        top: -114px;
+        right: -10%;
+    }
+
+    .coin3 {
+        top: -388px;
+        right: 41%;
+    }
+
+    .coin4 {
+        top: -118px;
+        right: -56%;
+    }
+
+    .about-section .about-info-div {
+        width: 60%;
+    }    
+
+    .circular-bg{
+        left: 23%;
+        top: 17%;
+    width: 605px;
+    height: 620px;
+    }
+
+    .backdrop-div{
+        width: 349px !important;
+    }
+
+    .box{
+        width: 261px;
+    height: 150px;
+    }
+
+    .item4 {
+        bottom: 15% !important;
+    }
+}
+
+
+@media screen and (min-width: 1000px) and (max-width: 1029px) {
+    .backdrop-div1{
+        top: 11%;
+        height: 458px;
+        width: 420px;
+    }
+
+    .about-info1 h2, .about-info2 h2 {
+       text-align: center; 
+    }
+
+
+    .coin1 {
+        top: -279px;
+        right: -60%;
+    }
+
+
+.coin2 {
+    top: -388px;
+    right: -23%;
+}
+
+.coin3 {
+    top: -204px;
+    right: 56%;
+}
+
+.coin4 {
+    top: -128px;
+    right: -60%;
+}
+
+.circular-bg{
+    left: 21%;
+        top: -5%;
+        height: 137%;
+}
+
+.box{
+    height: 170px !important;
+    width: 300px !important;
+}
+}
+
+@media screen and (min-width: 1030px) and (max-width: 1200px) {
  
 
     .hero-div .token-img1{
@@ -1688,9 +2068,9 @@ h2 {
     }
 
     .circular-bg{
-        left: 26%;
-        top: 5%;
-        width: 63%;
+        left: 27%;
+        top: 2%;
+        width: 58%;
     }
 
     .octivaImg {
@@ -1701,11 +2081,34 @@ h2 {
         
     }
 
+    
+
+    .coin1 {
+        top: 217px;
+        right: -74%;
+    }
+
+    .coin2 {
+        top: 55px;
+        right: 8%;
+    }
+
+    .coin3 {
+        top: -292px;
+        right: 12%;
+    }
+
+    .coin4 {
+        top: -128px;
+        right: -43%;
+    }
+
+    
 
     .box {
-        width: 210px;
-        height: 145px;
-        line-height: 41px;
+        width: 265px;
+        height: 173px;
+        line-height: 55px;
     }
 
     .box-1 {
@@ -1764,12 +2167,14 @@ h2 {
     .contact-container{
         padding: 20px;
     }
+
+
 }
 
 /* >>>>>>>>>>>>>>><<<<<<<<<<<<<<< */
 
 /* .container1{
-    background-image: url(/Images/Rectangle.png);
+    background-image: url(./Images/Rectangle.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
 } */
@@ -1789,10 +2194,7 @@ h2 {
     
   }
 
-  .content {
-    flex: 1;
-    padding: 5rem;
-  }
+  
 
   .heroHeader {
     font-size: clamp(2em, 5vw, 3em);
@@ -1830,7 +2232,7 @@ h2 {
   .buttons {
     display: flex;
     gap: 40px;
-    flex-wrap: wrap;
+    
   }
 
   .btn1 {
@@ -1870,23 +2272,7 @@ h2 {
     max-width: 300px;
   }
 
-  .phone {
-    width: 80%;
-    height: auto;
-    position: relative;
-    top: -70px;
-    left: 24px;
-
-  }
-
-  .mobile {
-    position: absolute;
-    width: 40vw;
-    height: auto;
-    z-index: -1;
-    left: -135px;
-    bottom: 10px;
-  }
+  
 
   .symbol {
     width: clamp(30px, 5vw, 60px);
@@ -1960,59 +2346,180 @@ h2 {
   }
 
   @media (max-width: 768px) {
+    .nav-img{
+        display: none;
+    }
+
     .heroSection {
       flex-direction: column;
     }
 
     .content {
-      padding-right: 0;
-      margin-bottom: 2rem;
+        text-align: center;
+      margin-bottom: 5rem;
+    }
+
+    .highlight {
+        text-align: center;
     }
 
     .visuals {
       width: 100%;
     }
 
+    .buttons {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    
+
     .phone-container {
       max-width: 200px;
     }
 
     .mobile {
-        left: 5px;
-        bottom: 2px;
+        left: 0px;
+        bottom: 16px;
     }
 
-    .floating-circle {
-      display: none;
+    .phone{
+        top: -38px !important;
+        left: 58px;
+        width: 50% !important;
     }
+
+    .backdrop-div{
+        height: 160px;
+        width: 172px;
+    }
+
+    .backdrop-div1{
+        height: 524px;
+        width: 365px;
+        left: 12% !important;
+        top: 15%;
+    }
+
+    .about-section{
+        width: 80%;
+    }
+
+    
+
+    .dollar-symbol { top: 50%; right: 10%; }
+.c1 { top: 15%; left: 10%; }
+.c2 { top: 20%; right: 10%; }
+.c3 { bottom: 30%; left: 10%; }
+.c4 { bottom: 5%; right: 30%; width: 10%; }
+.c5 { top: 5%; right: 25%; }
+.c6 { top: 0%; right: 5%; }
+.c7 { bottom: 10%; left: 20%; }
   }
 
-  @media (max-width: 480px) {
-    .buttons {
-      flex-direction: column;
-      gap: 10px;
-    }
-
-    .btn {
-      width: 100%;
-    }
-
-    .phone-container {
-      max-width: 150px;
-    }
-.phone{
-      top: 0;
-    left: 28px;
-}
-    .mobile {
-      left: -30px;
-      width: 30vh;
-    }
-  }
+ 
 
   @media(min-width: 769px) and (max-width: 900px){
     .mobile {
-        left: 5px;
-        bottom: 2px;
+        left: -60px;
+        bottom: 28px;
     }
+    .content {
+        flex: 1;
+        padding: 3rem;
+    }
+
+    .buttons {
+        flex-direction: column;
+    }
+
+
+    .sphere {
+        position: relative;
+        left: -10%;
+    }
+
+    .coin1 {
+        top: -270px;
+        right: -64%;
+    }
+
+    .coin2 {
+        top: -384px;
+        right: -18%;
+    }
+
+    .coin3 {
+        top: -280px;
+        right: -16%;
+    }
+
+    .coin4 {
+        top: -128px;
+        right: -48%;
+    }
+
+    .sphere1 {
+        left: -4%;
+    }
+
+    
   }
+
+
+  @media (max-width: 395px) {
+    .nav-img{
+        display: none;
+    }
+
+    .phone {
+        top: -52px !important;
+        left: 34px !important;
+        width: 50%;
+    }
+
+    .backdrop-div1 {
+        height: 400px;
+        width: 300px;
+    }
+
+    .about-coin{
+        height: 70px !important;
+        width: 70px !important;
+    }
+
+    .coin1 {
+        top: 107px;
+        right: -66%;
+    }
+
+    .coin2{
+        top: 52px;
+    right: 1%;
+    }
+
+    .coin3 {
+        top: -200px;
+        right: 6%;
+    }
+
+    .coin4 {
+        top: -77px;
+        right: -47%;
+    }
+    
+    .backdrop-div {
+        height: 180px !important;
+        width: 140px !important;
+        top: 72% !important;
+    }
+
+    .circular-bg {
+        left: 24%;
+    }
+
+    .container2 {
+        width: 90%;
+    }
+    
+}
