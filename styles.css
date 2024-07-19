@@ -1080,7 +1080,7 @@ h2 {
         width: 34vw;
         height: auto;
         z-index: -1;
-        left: -90px;
+        left: -76px;
         bottom: 20px;
       }
 
@@ -1288,8 +1288,8 @@ h2 {
 
     
     .circular-bg {
-        left: 24%;
-        top: 5%;
+        left: 27%;
+        top: 6%;
         width: 405px;
         height: 644px;
     }  
@@ -1368,8 +1368,12 @@ h2 {
         position: static;
         margin: 30px auto;
         width: 80%;
-        /* box-shadow: 0px 0px 35px 15px rgb(180, 180, 180); */
     }
+
+    .grad-line{
+        display: none;
+    }
+
 
 
     /* .item::after {
@@ -1610,9 +1614,9 @@ h2 {
       }
   
       .mobile {
-        left: -28px !important;
-        top: 27% !important;
-        width: 36vh;
+        left: -33px !important;
+        top: 23% !important;
+        width: 20vh;
       }
   
       .backdrop-div {
@@ -1724,6 +1728,10 @@ h2 {
         left: 45px;
     }
 
+
+    .grad-line{
+        display: none;
+    }
 
 
     /* Team section styles */
@@ -1882,11 +1890,12 @@ h2 {
     .about-info1 h2, .about-info2 h2{
         text-align: center;
     }
+    
 
     .circular-bg {
         left: 25%;
         top: 10%;
-        width: 528px;
+        width: 554px;
         height: 707px;
     }
 
@@ -2019,10 +2028,17 @@ h2 {
     }    
 
     .circular-bg{
-        left: 23%;
-        top: 17%;
-    width: 605px;
-    height: 620px;
+        left: 25%;
+        top: 15%;
+        width: 605px;
+        height: 634px;
+    }
+
+    .octivaImg {
+        position: relative;
+        left: 19%;
+        bottom: -120px;
+        width: 60%;
     }
 
     .backdrop-div{
@@ -2030,12 +2046,12 @@ h2 {
     }
 
     .box{
-        width: 261px;
-    height: 150px;
+        width: 247px;
+        height: 146px;
     }
 
     .item4 {
-        bottom: 15% !important;
+        bottom: 17% !important;
     }
 }
 
@@ -2075,8 +2091,8 @@ h2 {
 
 .circular-bg{
     left: 21%;
-        top: -5%;
-        height: 137%;
+    top: 1%;
+    height: 131%;
 }
 
 .box{
@@ -2093,9 +2109,9 @@ h2 {
     }
 
     .circular-bg{
-        left: 27%;
-        top: 2%;
-        width: 58%;
+        left: 26%;
+        top: 4%;
+        width: 64%;
     }
 
     .octivaImg {
@@ -2131,8 +2147,8 @@ h2 {
     
 
     .box {
-        width: 265px;
-        height: 173px;
+        width: 288px;
+        height: 185px;
         line-height: 55px;
     }
 
@@ -2181,17 +2197,19 @@ h2 {
 
 
     .item3{
-        bottom: 36%!important;
+        bottom: 37%!important;
     }
 
 
     .item4{
-        bottom: 10%!important;
+        bottom: 17%!important;
     }
 
     .contact-container{
         padding: 20px;
     }
+
+    
 
 
 }
@@ -2547,4 +2565,48 @@ h2 {
         width: 90%;
     }
     
+}
+
+@media (min-width: 1366px) and (max-width: 1900px){
+    .mobile {
+        left: -118px;
+        bottom: 4px;
+    }
+
+    .phone{
+        width: 65%;
+    }
+
+    .circular-bg {
+        left: 28%;
+        top: 19%;
+        width: 54%;
+        height: 96%;
+    }
+
+    .octivaImg img {
+        bottom: -77px;
+        left: 21% !important;
+    }
+
+    .box{
+        width: 39%;
+        height: 24%;
+        line-height: 80px;
+    }
+
+    .users {
+        font-size: 58px;
+        font-weight: 800;
+        letter-spacing: 0.07em;
+        color: #fff;
+    }
+
+    .box span {
+        font-size: 0.5em;
+        font-weight: normal;
+        color: #fff;
+        font-family: "josephin slab";
+        line-height: 37px;
+    }
 }
