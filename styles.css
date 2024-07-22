@@ -6,6 +6,10 @@
     font-family: "Inter", sans-serif;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #0D0D10;
     color: #fff;
@@ -241,7 +245,7 @@ body {
 .card-section .cards-div {
     display: flex;
     justify-content: center;
-    gap: 35px;
+    gap: 20px;
 }
 
 
@@ -273,7 +277,7 @@ body {
 .card-section .cards-div .card p {
     line-height: 20px;
     color: lightgray;
-    font-size: 14px;
+    font-size: 10px;
 }
 
 .card-section .cards-div .card h4{
@@ -435,8 +439,8 @@ body {
     height: 925px;
     border-radius: 50%;
     position: absolute;
-    left: 26%;
-    top: 10%;
+    left: 28%;
+    top: 15%;
     margin: 0 auto;
 }
 
@@ -451,11 +455,9 @@ body {
     flex-direction: column;
     border: 1px solid #FFFFFF;
     background: #00000085;
-    width: 305px;
-    height: 210px;
-
-    /* line-height: 50px; */
-    transition: .5s ease-out;
+    width: 280px;
+     height: 185px;
+    transition: .3s ease-out;
 }
 
 .inner-box{
@@ -517,8 +519,8 @@ body {
 .right-line1{
     width: 44%;
     position: relative;
-    left: 37%;
-    top: 9%;
+    left: 37.2%;
+    top: 11%;
 }
 
 .left-line1{
@@ -531,7 +533,7 @@ body {
 .right-line2{
     width: 44%;
     position: relative;
-    left: 37%;
+    left: 37.2%;
     top: 44%;
 }
 
@@ -549,15 +551,14 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
-    gap: 20px;
+    gap: 10px;
     background: radial-gradient(circle closest-side, #FC78FF -80%, #3f3f3f00);
     margin-bottom: 50px;
 }
 
 .cards {
     width: 95%;
-    /* background-color: #0A0E18; */
-    padding: 20px;
+    height: 96%;
     text-align: center;
     transition: .5s ease-out;
     padding: 60px 30px;
@@ -924,7 +925,7 @@ h2 {
 }
 
 .item2{
-    top: 17%!important; 
+    top: 19%!important; 
     right: 0!important;
 }
 
@@ -934,7 +935,7 @@ h2 {
 }
 
 .item4{
-    bottom: 18%!important; 
+    bottom: 17%!important; 
     right: 0!important;
 }
 
@@ -1080,8 +1081,8 @@ h2 {
         width: 34vw;
         height: auto;
         z-index: -1;
-        left: -76px;
-        bottom: 20px;
+        left: -56px;
+        bottom: 32px;
       }
 
     .card-section .cards-div .card {
@@ -1103,7 +1104,7 @@ h2 {
 
 
 /* Mobile phones (both portrait and landscape) */
-@media screen and (min-width: 501px) and (max-width: 767px) {
+@media screen and (min-width: 501px) and (max-width: 552px) {
     body {
         font-size: 14px;
     }
@@ -1233,8 +1234,8 @@ h2 {
   
 
   .card:hover {
-    transform: scale(1.1);
-    transition: 0.5s ease-in-out;
+    transform: scale(1.03);
+    transition: 0.2s ease-in-out;
     }
 
 
@@ -1257,6 +1258,33 @@ h2 {
 
     .about-info1 h2, .about-info2 h2{
         text-align: center;
+    }
+
+    .about-coin {
+        width: 90px !important;
+        height: 90px !important;
+    }
+
+    .coin1 {
+        top: 156px !important;
+        right: -62% !important;
+    }
+
+    .coin2 {
+        top: 55px !important;
+        right: 4% !important;
+    }
+
+
+    .coin3 {
+        top: -222px !important;
+        right: 9% !important;
+    }
+
+
+    .coin4 {
+        top: -94px !important;
+        right: -42% !important;
     }
 
     /* Tokenomics section styles */
@@ -1288,8 +1316,8 @@ h2 {
 
     
     .circular-bg {
-        left: 27%;
-        top: 6%;
+        left: 19%;
+        top: -5%;
         width: 405px;
         height: 644px;
     }  
@@ -1480,6 +1508,374 @@ h2 {
     }
 }
 
+@media screen and (min-width: 553px) and (max-width: 767px) {
+    body {
+        font-size: 14px;
+    }
+
+    /* Navbar styles */
+    .navbar {
+        /* flex-direction: row-reverse; */
+        align-items: center;
+    }
+
+    .nav-img{
+        display: none;
+    }
+
+    .logo-div {
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+
+    .logo-div img {
+        width: 50%;
+    }
+
+    .nav-item-div {
+        width: 100%;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    
+    .nav-toggle {
+        display: block;
+        font-size: 30px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        color: white;
+    }
+
+    .nav-item-div {
+        display: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-item {
+        display: block;
+        padding: 10px;
+        text-decoration: none;
+    }
+   
+       
+    /* Hero section styles */
+
+
+
+    .hero-div {
+        background-size: 100% auto;
+        top: 100px;
+    }
+
+    .hero-div .token-img1 {
+        left: 79px;
+        top: -102   px;
+    }
+
+    /* .main-section-txt-div {
+        width: 80%;
+        margin: -30px auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        padding-bottom: 100px;
+        position: relative;
+        top: -145px;
+    } */
+
+    .hero-div h1 {
+        width: 90%;
+        text-align: center;
+        font-size: 74px;
+        background: linear-gradient(180deg, #D1B3FF 20.32%, #6622CD 86.13%);
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-shadow: -2px -1px 2px rgba(0, 0, 0, 0.5);
+    }
+
+    .hero-div .h3 {
+        font-size: 24px;
+    }
+
+    .hero-div .token-img2 {
+        left: 14px;
+        top: 15px;
+    }
+
+    .hero-div .main-section-txt-div p {
+        width: 90%;
+        font-size: 14px;
+    }
+
+    .hero-div .txt-div-btn {
+        width: 100%;
+    }
+
+  
+
+    /* Card section styles */
+    .card-section .cards-div {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-section .card-img-div img {
+        top: -24px;
+    }
+
+    .card-section .cards-div .card {
+        width: 100%;
+        margin-bottom: 20px;
+        transition: .5s ease-out;
+    }
+
+  
+
+  .card:hover {
+    transform: scale(1.03);
+    transition: 0.2s ease-in-out;
+    }
+
+
+    /* About section styles */
+    .about-section {
+        flex-direction: column;
+        margin: 0px auto;
+        width: 78%;
+    }
+
+    .about-section .about-info-div {
+        border-right: none;
+        padding-right: 0;
+        text-align: center;
+    }
+
+    .about-section .about-img-div img {
+        width: 90%;
+    }
+
+    .about-info1 h2, .about-info2 h2{
+        text-align: center;
+    }
+
+    /* Tokenomics section styles */
+    .tokenomics-container {
+        height: auto;
+        /* padding: 50px 0; */
+    }
+
+    .octivaImg {
+        top: 30px;
+        width: 80%;
+        left: 10px;
+        margin: 10px auto;
+    }
+
+    .octivaImg img {
+        width: 70%;
+    }
+
+    .octivaHeader{
+        font-size: x-large;
+        letter-spacing: 0;
+    }
+
+
+    .box span {
+        font-size: 0.3em;
+    }
+
+    
+    .circular-bg {
+        left: 24%;
+        top: 7%;
+        width: 405px;
+        height: 644px;
+    }  
+    
+
+    .tokenomics-container .backdrop-div {
+        width: 208px;
+        height: 260px;
+    }
+
+    .coin2 {
+        top: 72px;
+        right: 0%;
+    }
+
+    .content {
+        padding: 1rem;
+    }
+
+    .users {
+        font-size: 20px;
+    }
+
+    .box {
+        width: 160px;
+        height: 110px;
+        line-height: 24px;
+    }
+
+    .box-1{
+        left: 0px;
+        top: 143px;
+    }
+
+    .box-2{
+        top: 131px;
+        right: 34px;   
+    }
+
+    .box-3{
+        left: 0px;
+        bottom: 258px;
+    }
+
+    .box-4{
+        right: 46px;
+        bottom: 258px;
+    }
+
+    .box-5{
+        bottom: 105px;
+        left: 94px;
+    }
+
+    /* Team section styles */
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Roadmap section styles */
+    .roadmap {
+        background-size: 100% auto;
+        margin-top: 100px;
+    }
+
+    .container2 {
+        width: 80%;
+        padding: 20px;
+    }
+
+    .timeline {
+        height: auto;
+    }
+
+    .item {
+        position: static;
+        margin: 30px auto;
+        width: 80%;
+    }
+
+    .grad-line{
+        display: none;
+    }
+
+
+
+    /* .item::after {
+        display: none;
+    } */
+
+    /* Footer styles */
+    
+    .footer-top-border{
+        display: none;
+    }
+
+
+    .mob-view-footer{
+        display: block;
+        height: auto;
+    }
+
+    .menu-icon{
+        width: 60px;
+    }
+
+    .mob-foot{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu-btn{
+        width: 15%;
+        background-color: #0D0D10;
+        padding: 10px;
+        border-radius: 50px;
+        margin: 0 auto;
+        text-align: center;
+        position: relative;
+        top: 33px;
+        display: block;
+    }
+
+    .menu-btn svg{
+        background: #424485;
+        border-radius: 28px;
+        height: 50px;
+        width: 50px;
+        padding: 5px;
+    }
+
+    .footer-icon{
+        width: 100%;
+        height: 50px;
+        background: linear-gradient(to bottom, #45488b, #232551);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .footer-icon i{
+        font-size: 25px;
+    }
+
+
+    .footer{
+        display: none;
+    }
+
+    .contact-container {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .logo-section {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .description-footer {
+        width: 50%;
+        margin: 10px auto;
+    }
+
+    .social-iconss{
+        justify-content: center;
+    }
+
+    .contact-info {
+        grid-template-columns: 1fr;
+        padding: 60px;
+    }
+
+    .footer-top-border{
+        bottom: -10px;
+    }
+}
+
+
 
  @media screen and (max-width: 500px) {
      body {
@@ -1653,6 +2049,33 @@ h2 {
 
     .about-section .about-img-div img {
         width: 100%;
+    }
+
+    .about-coin{
+        width: 80px !important;
+    height: 90px !important;
+    }
+
+    .coin1 {
+        top: 127px;
+        right: -63%;
+    }
+
+    .coin2 {
+        top: 51px;
+        right: 2%;
+    }
+
+
+    .coin3 {
+        top: -224px;
+        right: 10%;
+    }
+
+
+    .coin4 {
+        top: -86px;
+        right: -39%;
     }
 
     .about-info1 h2, .about-info2 h2{
@@ -1924,8 +2347,8 @@ h2 {
     } */
 
     .box{
-        width: 231px;
-        height: 137px;
+        width: 231px !important;
+        height: 137px !important;
         line-height: 41px;
     }
 
@@ -1946,23 +2369,30 @@ h2 {
         top: 78%;
     } */
 
+    .right-line1 {
+        width: 44%;
+        position: relative;
+        left: 37%;
+        top: 12%;
+    }
+
     .item1{
         top: 0!important; 
         left: 0!important;
     }
 
     .item2{
-        top: 17%!important; 
+        top: 19%!important; 
         right: 0!important;
     }
 
     .item3{
-        bottom:33%!important; 
+        bottom:38%!important; 
         left: 0!important;
     }
 
     .item4{
-        bottom: 11%!important; 
+        bottom: 17%!important; 
         right: 0!important;
     }
 
@@ -2005,22 +2435,22 @@ h2 {
 
     .coin1 {
         top: -272px;
-        right: -70%;
+        right: -66%;
     }
 
     .coin2 {
-        top: -114px;
-        right: -10%;
+        top: -390px;
+        right: -26%;
     }
 
     .coin3 {
-        top: -388px;
-        right: 41%;
+        top: -183px;
+        right: 60%;
     }
 
     .coin4 {
         top: -118px;
-        right: -56%;
+        right: -60%;
     }
 
     .about-section .about-info-div {
@@ -2053,10 +2483,24 @@ h2 {
     .item4 {
         bottom: 17% !important;
     }
+
+    .right-line1 {
+        width: 44%;
+        position: relative;
+        left: 37.2%;
+        top: 12%;
+    }
+
+    .right-line2 {
+        width: 44%;
+        position: relative;
+        left: 37.2%;
+        top: 46%;
+    }
 }
 
 
-@media screen and (min-width: 1000px) and (max-width: 1029px) {
+@media screen and (min-width: 1000px) and (max-width: 1023px) {
     .backdrop-div1{
         top: 11%;
         height: 458px;
@@ -2069,24 +2513,74 @@ h2 {
 
 
     .coin1 {
-        top: -279px;
-        right: -60%;
+        top: -270px !important;
+        right: -59% !important;
     }
-
+    
 
 .coin2 {
-    top: -388px;
-    right: -23%;
+    top: -155px !important;
+    right: -7% !important;
+
 }
 
 .coin3 {
-    top: -204px;
-    right: 56%;
+    top: -394px !important;
+        right: 40% !important;
 }
 
 .coin4 {
-    top: -128px;
-    right: -60%;
+    top: -128px !important;
+    right: -59% !important;
+
+}
+
+.circular-bg{
+    left: 21%;
+    top: 1%;
+    height: 131%;
+}
+
+.box{
+    height: 170px !important;
+    width: 300px !important;
+}
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1029px) {
+    .backdrop-div1{
+        top: 11%;
+        height: 458px;
+        width: 420px;
+    }
+
+    .about-info1 h2, .about-info2 h2 {
+       text-align: center; 
+    }
+
+
+    .coin1 {
+        top: 177px !important;
+        right: -64% !important;
+    }
+    
+
+.coin2 {
+    top: 60px !important;
+        right: 8% !important;
+
+}
+
+.coin3 {
+    top: -308px !important;
+    right: 11% !important;
+
+}
+
+.coin4 {
+    top: -114px !important;
+        right: -39% !important;
+
 }
 
 .circular-bg{
@@ -2147,8 +2641,9 @@ h2 {
     
 
     .box {
-        width: 288px;
+        width: 252px;
         height: 185px;
+
         line-height: 55px;
     }
 
@@ -2484,12 +2979,12 @@ h2 {
 
     .coin1 {
         top: -270px;
-        right: -64%;
+        right: -67%;
     }
 
     .coin2 {
         top: -384px;
-        right: -18%;
+        right: -20%;
     }
 
     .coin3 {
@@ -2569,8 +3064,8 @@ h2 {
 
 @media (min-width: 1366px) and (max-width: 1900px){
     .mobile {
-        left: -118px;
-        bottom: 4px;
+        left: -82px;
+        bottom: 18px;
     }
 
     .phone{
@@ -2590,8 +3085,8 @@ h2 {
     }
 
     .box{
-        width: 39%;
-        height: 24%;
+        width: 35%;
+        height: 22%;
         line-height: 80px;
     }
 
